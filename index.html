@@ -1,0 +1,76 @@
+ 
+<html>
+  <head>
+    <title>Hand Gesture Web App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+  <div class="container">
+  
+    <center>
+
+      <br><br>
+      <h3 class="btn btn-success">Hand Gesture 
+<br>
+<span>&#128076;</span>
+<span>&#128077;</span>
+<span>&#128074;</span>
+<span>&#128075;</span>
+<span>&#129304;</span>
+<span>&#9996;</span>
+      </h3>
+<br>
+<br>
+      <p style="font-size: 22px; color: royalblue;" >Take a photo of your hand to generate the hand gesture
+      	<br>
+        <br>
+        <h4 style="color: rgb(125, 110, 211) ">&#128076; This is looking Amazing </h4>
+        
+        <h4 style="color:rgb(125, 110, 211)">&#128077; All the Best </h4> 
+        
+        <h4 style="color:rgb(125, 110, 211)">&#9996; this was a marvelous victory </h4>
+        
+        <br>
+      </p>
+<div class="col-md-4 col-sm-12 col-xs-12">
+  <label style="color: royalblue;">Webcam View</label>
+  <div id="camera"></div>
+  <br><br>
+  <button onclick="snapshot();" class="btn btn-warning">Capture The Hand Gesture</button>
+</div>
+
+<div class="col-md-4 col-sm-12 col-xs-12">
+  <label style="color: royalblue;">Prediction 1-</label>
+  <p class="gesture_name" id="result_gesture_name"></p>
+  <p class="gesture" id="update_gesture"></p>
+
+  <label style="color: royalblue;">Prediction 2-</label>
+  <p class="gesture_name" id="result_gesture_name2"></p>
+  <p class="gesture" id="gesture_emoji2"></p>
+</div>
+      <div class="col-md-4 col-sm-12 col-xs-12">
+	      <label style="color: royalblue;">Snapshot - </label>
+        <div id="result"></div>
+        <br><br>
+<button onclick="check();" class="btn btn-success">Predict Hand Gesture</button>
+      </div>
+
+    </center>
+
+  </div>
+
+<script src="main.js"></script>
+
+  </body>
+</html>
+
+ 
